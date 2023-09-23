@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600);
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+#main-container{
+    width: 100vw;
+    /* background: #F8FAFC; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-page{
+    & #form-container{
+        width: 30vw;
+        height: fit-content;
+        background: wheat;
+        padding: 20px 30px 5px;
+        margin: 35px auto 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 2;
+
+        & div{
+            margin: 5px 0;
+        }
+    
+        & div>span{
+            color: rgb(102, 101, 101);
+        }
+        & h2{
+            margin:5px 0;
+        }
+        & label{
+            font-size: 14px;
+        }
+        & input{
+            width: 95%;
+            height: 18px;
+            border-radius: 3px;
+            border: none;
+            padding: 5px 8px;
+            margin: 2px 0;
+            color: black;
+        }
+        & #signup-btn{
+            width: 100%;
+            height: 50px;
+            margin-top: 8px;
+            border: none;
+            background:linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+            ;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1.25px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        & .disclaimer{
+            margin-top: 25px;
+        }
+        & .disclaimer > p{
+            font-size: 15px;
+            color: #625BF7;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    & div.note{
+        text-align: center;
+        & span{
+            font-size: 12px;
+            & a{
+                text-decoration: none;
+                color: #625BF7;
+            }
+        }
+    }
+}
+
+
+#profile-page{
+    z-index: 2;
+    display: none;
+    & div.message{
+        text-align: center;
+        margin-top: 35px;
+        & p{
+            margin: 0;
+            color: #463EEA;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+    }
+    & #profile-container{
+        width: 30vw;
+        height: fit-content;
+        background: wheat;
+        padding: 20px 30px 5px;
+        margin: 25px auto 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        & h3{
+            text-align: center;
+            margin: 5px auto 15px;
+        }
+        & img{
+            width: 35%;
+            display: block;
+            margin: 0 auto;
+        }
+        & div.user-info{
+            width: 100%;
+            display: block;
+            margin:30px auto 20px;
+            & p{
+                text-align: center;
+                margin: 8px auto;
+            }
+        }
+        & button{
+            display: block;
+            margin:0px auto 15px;
+            width: 80%;
+            height: 40px;
+            /* margin-top: 8px; */
+            border: none;
+            background:linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+            ;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1.25px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
+
+div#background{
+    width: 115%;
+    height: 15px;
+    background-color: green;
+    top:50%;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(25deg);
+}
+
+
